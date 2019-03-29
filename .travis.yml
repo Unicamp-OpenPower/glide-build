@@ -12,7 +12,8 @@ script:
   - cd Masterminds
   - git clone https://github.com/Masterminds/glide.git
   - cd glide
+  - ls
   - make build
   - ls
-  - cd ./glide
-  - ls
+  - sudo chmod 777 glide
+  - ./glide
