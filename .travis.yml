@@ -1,10 +1,10 @@
-dist: trusty
-os: 
-  - linux-ppc64le
+dist: bionic
+os: linux
+arch: ppc64le
 sudo: required
 language: go
 go:
-- "1.12.1"
+- "1.13.x"
 
 script:
   - cd $GOPATH/src/github.com
@@ -12,8 +12,6 @@ script:
   - cd Masterminds
   - git clone https://github.com/Masterminds/glide.git
   - cd glide
-  - ls
   - make build
-  - ls
   - sudo chmod 777 glide
   - ./glide
