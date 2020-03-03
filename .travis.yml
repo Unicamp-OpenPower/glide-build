@@ -15,3 +15,10 @@ script:
   - make build
   - sudo chmod 777 glide
   - ./glide
+
+notifications:
+  slack:
+    rooms:
+      - secure: "jza3AU9Ml++vYFnwuX0YoLHfJqpX/QBf6fEGv/MNHsv57nyX0sTZ0Wvg4nCTvufL/QBk2WUiTVMuuECtAPtyfzgdyc3dVJLc8ZKr07sGXTPwMUzZAesLQ/1v25lWnFm6biLNYokmla7Ke4aT1NKlmX8s9x/TRbAn2H4/uPeNOgZVi054/6OY9KjiQbLxqCbBPbgmrwlpj8a3c/yeyo7V4rbl0D1qkBuHwgdpbcMqNrYbi+7oPHWCO4UVH7SiZkCX/MiqFryN3O2FF/IoW/eqafIpeF6ss1MliOctPPTVEsDSFcRiR4rTorq65I1hWNjZ/M88c7zzSK/N5GNkkMxPS/E5T13EMbuLLf5cUFx9CJdSrXtvdwogJSOcoKIqdV/yy0rioyUyMKhkM9VyHz+qUv/dizgMaaFElt35Eigp0eXlPLGKQOHXDnXdLXHvY9uOXt3p5irRPF1dReP3mNVVTKqh0jo71WYlEhq8wfQPoxzXPlhsuQpu7TDPQ/xOGE930S5fYSQgs5HenmxVt/cDbq4AuJ8Akno5YqBE9iZPfUcfphdi4YgNnAVGCHUQ7urrzo/vTDfSjdB2pfuqzfOi69Qwk/wyT8lC0yGp5lDTnI5pzihIcxXf6I+vKJLDRdSPOB2VmR/zkUKjfKwQmIiPCnlMZvenBVufgbsfbU5xrvU="
+    on_success: change
+    on_failure: change
